@@ -70,13 +70,25 @@ class Parser {
         else error("Missed variable");
         return toReturn;
     }
+    //здесь будет подсчет скобок
+private static boolean checkSParentheses(){
+        int openSt;
+        int openSquare;
+        int openForm;
+for(int i=0;i<tokens.size();i++){
 
+}
+        return true;
+}
 
 
     List<BaseStatement> program() {
+        int print;
         List<BaseStatement> statements = new ArrayList<>();
         while (pos < tokens.size()) {
-
+            System.out.println(1);
+            pos++;
+            checkSide();
         }
         return statements;
     }

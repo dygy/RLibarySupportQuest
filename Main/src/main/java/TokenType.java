@@ -11,7 +11,7 @@ public enum TokenType {
     IDENT,
     NUMBER,
     QUESTIONMARK,
-    OPENSTANDASRT,
+    OPENSTANDART,
     OPENSQUARE,
     OPENFORM,
     CLOSESTANDART,

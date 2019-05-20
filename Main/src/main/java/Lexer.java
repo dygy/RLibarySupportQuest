@@ -20,10 +20,10 @@ class Lexer {
             case 11: return TokenType.QUANTIFY;
             case 12: return TokenType.OPENFORM;
             case 13: return TokenType.CLOSEFORM;
-            case 14: return TokenType.OPENSTANDASRT;
+            case 14: return TokenType.OPENSTANDART;
             case 15: return TokenType.CLOSESTANDART;
             case 16: return TokenType.OPENSQUARE;
-            case 17: return TokenType.CLOSEFORM;
+            case 17: return TokenType.CLOSESQUARE;
             case 18: return TokenType.QUESTIONMARK;
             case 19: return TokenType.DOBULEPOINT;
         }
@@ -31,7 +31,7 @@ class Lexer {
     }
     List<Token> split(String text) {
 
-        final String regex = "(/n)|(/)|(=)|(<)|(>)|(\\d+)|([A-Za-z_])|(-)|(\\+)|(%)|(\\*)|(\\{)|(})|(\\()|(\\))|(\\[)|(])|(\\?)|(:)";
+        final String regex = "(\n)|(/)|(=)|(<)|(>)|(\\d+)|([A-Za-z_])|(-)|(\\+)|(%)|(\\*)|(\\{)|(})|(\\()|(\\))|(\\[)|(\\])|(\\?)|(:)";
         List<Token> list = new ArrayList<>();
         final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
         final Matcher matcher = pattern.matcher(text);
